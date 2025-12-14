@@ -2,7 +2,7 @@ export interface StoryMessage {
     id: number;
     sender: string;
     content: string;
-    type: 'text' | 'image' | 'system';
+    type: 'text' | 'image' | 'system' | 'inner_monologue';
     delay: number; // Delay in ms before this message appears after trigger
     trigger?: string; // Optional trigger event
 }
@@ -16,11 +16,25 @@ export const STORY_TIMELINE: StoryMessage[] = [
         delay: 500,
     },
     {
+        id: 101, // Internal thought
+        sender: 'Me',
+        content: 'Mình không muốn về. Mệt quá.',
+        type: 'inner_monologue',
+        delay: 2000,
+    },
+    {
         id: 2,
         sender: 'Mẹ',
         content: 'Năm nay con có về không? Bà ngoại nhớ con lắm.',
         type: 'text',
         delay: 2500,
+    },
+    {
+        id: 102,
+        sender: 'Me',
+        content: 'Đừng lấy bà ra áp lực con nữa.',
+        type: 'inner_monologue',
+        delay: 2000,
     },
     {
         id: 3,
@@ -35,6 +49,13 @@ export const STORY_TIMELINE: StoryMessage[] = [
         content: 'Sao con không trả lời?',
         type: 'text',
         delay: 5000,
+    },
+    {
+        id: 103,
+        sender: 'Me',
+        content: 'Trả lời để làm gì? Có ai hiểu đâu.',
+        type: 'inner_monologue',
+        delay: 1500,
     },
     {
         id: 5,
@@ -70,6 +91,13 @@ export const STORY_TIMELINE: StoryMessage[] = [
         content: 'Con đừng áp lực quá, miễn con về là vui rồi. Nhưng mà... hàng xóm họ cứ hỏi thăm hoài.',
         type: 'text',
         delay: 6000,
+    },
+    {
+        id: 104,
+        sender: 'Me',
+        content: 'Hàng xóm... sĩ diện quan trọng hơn con sao?',
+        type: 'inner_monologue',
+        delay: 2000,
     }
 ];
 

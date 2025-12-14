@@ -3,20 +3,27 @@
    ======================================== */
 
 /* CSS Variables - Depression Mode */
-:root {
-  --bg-dark: #121212;
-  --bg-darker: #0a0a0a;
-  --bg-card: #1a1a1a;
-  --bg-input: #252525;
-  --text-faded: #888888;
-  --text-dim: #666666;
-  --text-muted: #444444;
-  --btn-muted-green: #2d4a3e;
-  --btn-muted-green-hover: #3a5f50;
-  --accent-dull: #4a6b5c;
-  --border-subtle: #333333;
-  --shadow-heavy: rgba(0, 0, 0, 0.5);
-}
+--bg-dark: #121212;
+--bg-darker: #0a0a0a;
+--bg-card: #1a1a1a;
+--bg-input: #252525;
+--text-faded: #888888;
+--text-dim: #666666;
+--text-muted: #444444;
+--btn-muted-green: #2d4a3e;
+--btn-muted-green-hover: #3a5f50;
+--accent-dull: #4a6b5c;
+--border-subtle: #333333;
+--shadow-heavy: rgba(0, 0, 0, 0.5);
+
+/* Zalo Colors */
+--zalo-blue: #0068FF;
+--zalo-bg-light: #f2f4f7;
+--zalo-header-text: #ffffff;
+--zalo-bubble-sent: #e5efff;
+--zalo-bubble-received: #ffffff;
+--zalo-text-primary: #000000;
+--zalo-text-secondary: #767a7f;
 
 /* Reset & Base Styles */
 * {
